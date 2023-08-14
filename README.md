@@ -1,6 +1,10 @@
 # prometheus-task2
 
 # 1) How do I trigger a Prometheus alert?
+# -Setup and configure AlertManager.
+# -Configure the config file on Prometheus so it can talk to the AlertManager.
+# -Define alert rules in Prometheus server configuration.
+# -Define an alert mechanism in AlertManager to send alerts via Slack and Mail.
 
 # ![20139661r86QlIMyGV](https://github.com/HebaShaban/prometheus-task2/assets/128882939/adf85ddd-dbe8-4bc8-a135-a13cea87c089)
 
@@ -15,6 +19,8 @@
 # 4) What are the different PromQL data types available in Prometheus Expression language?
 
 # PromQL, short for Prometheus Querying Language, is the main way to query metrics within Prometheus. You can display an expression's return either as a graph or export it using the HTTP API. PromQL uses three data types: scalars, range vectors, and instant vectors. It also uses strings, but only as literals.
+
+# 5- How To calculate the average request duration over the last 5 minutes from a histogram?
 
 # To calculate the average request duration over the last 5 minutes from a histogram in Prometheus, you can use the histogram_quantile() function in combination with the rate() function and a time range selector.
 
